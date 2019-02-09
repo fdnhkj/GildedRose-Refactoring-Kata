@@ -11,10 +11,8 @@ export function incrementQuality(item) {
   }
 }
 
-export function decrementQuality(item) {
-  if (item.quality > minQuality) {
-    item.quality--;
-  }
+export function decrementQuality(item, decrement = 1) {
+  item.quality = Math.max(item.quality - decrement, minQuality);
 }
 
 export function decrementSellIn(item) {
