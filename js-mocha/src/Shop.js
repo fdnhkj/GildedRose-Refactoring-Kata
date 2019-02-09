@@ -1,7 +1,7 @@
 import qualityItemModifier from './quality-modifiers';
 
 export default class Shop {
-  constructor(items = []) {
+  constructor(items) {
     this.items = items;
   }
 

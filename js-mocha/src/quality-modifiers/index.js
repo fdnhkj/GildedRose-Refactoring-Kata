@@ -17,5 +17,4 @@ export default function qualityItemModifier(item) {
     default:
       return defaultQualityModifier(item);
   }
-  return item;
 }
